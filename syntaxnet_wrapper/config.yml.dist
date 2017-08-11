@@ -1,5 +1,5 @@
 syntaxnet:
-    ROOT_DIR: /root/syntaxnet
+    ROOT_DIR: /root/models/syntaxnet
     PARSER_EVAL: bazel-bin/syntaxnet/parser_eval
     CONTEXT: syntaxnet/models/parsey_universal/context.pbtxt
     MODEL: syntaxnet/models/parsey_universal
