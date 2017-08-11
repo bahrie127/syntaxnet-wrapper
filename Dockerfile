@@ -1,6 +1,6 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.04
 
-LABEL maintainer="mathias@short-edition.com"
+LABEL maintainer="bahri@atmatech.net"
 LABEL version="0.1"
 LABEL description="Dockerfile intending to install syntaxnet syntactic parser and its python wrapper"
 
@@ -43,7 +43,7 @@ RUN echo "build --spawn_strategy=standalone --genrule_strategy=standalone" \
 ENV BAZELRC /root/.bazelrc
 
 # Install the most recent bazel release.
-ENV BAZEL_VERSION 0.4.5
+ENV BAZEL_VERSION 0.4.3
 WORKDIR /
 RUN mkdir /bazel && \
     cd /bazel && \
